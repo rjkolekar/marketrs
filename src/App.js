@@ -7,6 +7,7 @@ import Newsletter from './components/common/Newsletter';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MarketPlace from './components/pages/MarketPlace';
 import Footer from './components/common/Footer';
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/company" element={<Company />} />
         <Route path="/marketplace" element={<MarketPlace />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
       <Newsletter />
       <Footer />
