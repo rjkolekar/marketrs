@@ -9,21 +9,39 @@ function classNames(...classes) {
 const countries = ['USA', 'Canada', 'UK', 'Australia', 'Germany', 'France'];
 const reports = [
   {
-    name: 'Market Trend Analysis',
+    name: 'Market Opportunity Assessment',
     description:
-      'Gain insights into current market trends and forecasts to make informed business decisions.',
+      'Discover untapped market opportunities and potential niches for your business to capitalize on.',
     price: '$99.99',
   },
   {
-    name: 'Consumer Behavior Study',
+    name: 'Customer Segmentation Analysis',
     description:
-      'Understand consumer behavior patterns and preferences to tailor your marketing strategies effectively.',
+      'Segment your target audience effectively based on demographics, behaviors, and preferences for precise targeting.',
     price: '$129.99',
   },
   {
-    name: 'Industry Competitor Analysis',
+    name: 'Competitive Landscape Evaluation',
     description:
-      'Analyze your competitors in the industry and identify key strategies for staying ahead in the market.',
+      'Evaluate the competitive landscape comprehensively to devise strategic plans for outperforming rivals.',
+    price: '$79.99',
+  },
+  {
+    name: 'Market Trend Forecasting',
+    description:
+      'Predict future market trends and anticipate shifts to stay ahead of the competition.',
+    price: '$99.99',
+  },
+  {
+    name: 'Consumer Satisfaction Study',
+    description:
+      'Understand customer satisfaction levels and areas for improvement to enhance brand loyalty.',
+    price: '$129.99',
+  },
+  {
+    name: 'Industry Innovation Analysis',
+    description:
+      'Analyze industry innovations and emerging technologies to adapt and innovate your offerings.',
     price: '$79.99',
   },
 ];
@@ -69,29 +87,27 @@ export default function MarketResearchReports() {
             </p>
             <div className="mt-10 grid gap-8 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-10">
               {reports.map((report, index) => (
-                <div key={index} className="p-6 bg-white rounded-lg shadow-md">
+                <div key={index} className="p-6 bg-gray-100 rounded-md shadow-md" style={{ width: '100%', maxWidth: '350px' }}>
                   <h3 className="text-lg font-semibold">{report.name}</h3>
-                  <p className="mt-2 text-gray-600">{report.description}</p>
-                  <div className="mt-6 flex justify-center">
-                    <button
-                      onClick={() => setShowContactForm(true)}
-                      className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-indigo-700"
-                    >
-                      Read More 
-                    </button>
-                  </div>
+                  <p className="mt-2 text-gray-700 text-sm" style={{ maxHeight: '100px', overflow: 'hidden' }}>{report.description} <a href="#" onClick={() => setShowContactForm(true)} className="text-blue-500 hover:underline">Read More</a></p>
                   <div className="mt-4 flex justify-between items-center">
                     <span className="font-semibold text-gray-900">{report.price}</span>
                     <button
                       onClick={() => setShowContactForm(true)}
                       className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
                     >
-                      Buy
+                      Request Sample
                     </button>
                   </div>
                 </div>
               ))}
             </div>
+
+
+
+
+
+
           </div>
         </div>
       </div>
@@ -103,7 +119,7 @@ export default function MarketResearchReports() {
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                    First Name
+                    Name
                   </label>
                   <div className="mt-1.5">
                     <input
@@ -116,10 +132,13 @@ export default function MarketResearchReports() {
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
                   </div>
+
+
+
                 </div>
                 <div>
                   <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                    Last Name
+                    Company Name
                   </label>
                   <div className="mt-1.5">
                     <input
@@ -154,32 +173,32 @@ export default function MarketResearchReports() {
                     Phone number
                   </label>
                   <div className="relative mt-1.5 flex">
-  <div className="flex items-center">
-    <label htmlFor="country" className="sr-only">
-      Country
-    </label>
-    <select
-      id="country"
-      name="country"
-      value={formData.country}
-      onChange={handleInputChange}
-      className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-    >
-      <option>US</option>
-      <option>CA</option>
-      <option>EU</option>
-    </select>
-  </div>
-  <input
-    type="tel"
-    name="phoneNumber"
-    id="phone-number"
-    autoComplete="tel"
-    value={formData.phoneNumber}
-    onChange={handleInputChange}
-    className="block ml-2 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-  />
-</div>
+                    <div className="flex items-center">
+                      <label htmlFor="country" className="sr-only">
+                        Country
+                      </label>
+                      <select
+                        id="country"
+                        name="country"
+                        value={formData.country}
+                        onChange={handleInputChange}
+                        className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                      >
+                        <option>US</option>
+                        <option>CA</option>
+                        <option>EU</option>
+                      </select>
+                    </div>
+                    <input
+                      type="tel"
+                      name="phoneNumber"
+                      id="phone-number"
+                      autoComplete="tel"
+                      value={formData.phoneNumber}
+                      onChange={handleInputChange}
+                      className="block ml-2 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
+                  </div>
 
                 </div>
                 <div className="sm:col-span-2">
