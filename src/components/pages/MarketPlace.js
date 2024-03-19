@@ -89,7 +89,7 @@ export default function MarketResearchReports() {
               {reports.map((report, index) => (
                 <div key={index} className="p-6 bg-gray-100 rounded-md shadow-md" style={{ width: '100%', maxWidth: '350px' }}>
                   <h3 className="text-lg font-semibold">{report.name}</h3>
-                  <p className="mt-2 text-gray-700 text-sm" style={{ maxHeight: '100px', overflow: 'hidden' }}>{report.description} <a href="#" onClick={() => setShowContactForm(true)} className="text-blue-500 hover:underline">Read More</a></p>
+                  <p className="mt-2 text-gray-700 text-md" style={{ maxHeight: '100px', overflow: 'hidden' }}>{report.description} <a href="#" onClick={() => setShowContactForm(true)} className="text-blue-500 hover:underline">Read More</a></p>
                   <div className="mt-4 flex justify-between items-center">
                     <span className="font-semibold text-gray-900">{report.price}</span>
                     <button
