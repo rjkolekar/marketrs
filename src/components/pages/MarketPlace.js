@@ -85,23 +85,24 @@ export default function MarketResearchReports() {
               Explore our latest market research reports to gain valuable insights into industry trends and opportunities.
               Contact us for more information or to purchase a report.
             </p>
-            <div className="mt-10 grid gap-8 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-10">
-              {reports.map((report, index) => (
-                <div key={index} className="p-6 bg-gray-100 rounded-md shadow-md" style={{ width: '100%', maxWidth: '350px' }}>
-                  <h3 className="text-lg font-semibold">{report.name}</h3>
-                  <p className="mt-2 text-gray-700 text-md" style={{ maxHeight: '100px', overflow: 'hidden' }}>{report.description} <a href="#" onClick={() => setShowContactForm(true)} className="text-blue-500 hover:underline">Read More</a></p>
-                  <div className="mt-4 flex justify-between items-center">
-                    <span className="font-semibold text-gray-900">{report.price}</span>
-                    <button
-                      onClick={() => setShowContactForm(true)}
-                      className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
-                    >
-                      Request Sample
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-x-8 lg:gap-y-10">
+  {reports.map((report, index) => (
+    <div key={index} className="p-6 bg-gray-100 rounded-md shadow-md">
+      <h3 className="text-lg font-semibold">{report.name}</h3>
+      <p className="mt-2 text-gray-700 text-md" style={{ maxHeight: '100px', overflow: 'hidden' }}>{report.description} <a href="#" onClick={() => setShowContactForm(true)} className="text-blue-500 hover:underline">Read More</a></p>
+      <div className="mt-4 flex justify-between items-center">
+        <span className="font-semibold text-gray-900">{report.price}</span>
+        <button
+          onClick={() => setShowContactForm(true)}
+          className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+        >
+          Request Sample
+        </button>
+      </div>
+    </div>
+  ))}
+</div>
+
 
 
 
