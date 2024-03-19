@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutImage from '../images/about.jpg';
-
+import promiseimage from '../images/promise.jpg'
 const CompanyPage = () => {
   return (
     <div className="bg-gray-100">
@@ -29,7 +29,7 @@ const CompanyPage = () => {
             complexities of the market landscape and make informed decisions that drive success.
           </p>
           {/* Call to Action button */}
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4">
             Learn More
           </button>
         </div>
@@ -40,22 +40,7 @@ const CompanyPage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">Why Choose Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-bold mb-2">Expertise</h3>
-              <p className="text-lg">Our team consists of industry experts with extensive experience in market research.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-bold mb-2">Custom Solutions</h3>
-              <p className="text-lg">We tailor our research methodologies to meet the unique needs of each client.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-bold mb-2">Data-Driven Insights</h3>
-              <p className="text-lg">We leverage advanced analytics to provide actionable insights and recommendations.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-bold mb-2">Client Satisfaction</h3>
-              <p className="text-lg">We prioritize client satisfaction and strive to exceed expectations in every project.</p>
-            </div>
+            {/* Contents of Why Choose Us section */}
           </div>
         </div>
       </div>
@@ -72,7 +57,8 @@ const CompanyPage = () => {
       </div>
 
       {/* Values Section */}
-      <div className="bg-gray-100 py-12">
+          {/* Values Section */}
+          <div className="bg-gray-100 py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -96,15 +82,23 @@ const CompanyPage = () => {
         </div>
       </div>
 
-      {/* Our Promise Section */}
-      <div className="bg-gray-200 py-12">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4">Our Promise</h2>
-          <p className="text-lg leading-relaxed">
-            When you partner with us, you embark on a journey of discovery and growth. We are dedicated to providing you with insights that inspire confidence and drive meaningful outcomes. Our commitment to excellence, coupled with our passion for unraveling market intricacies, ensures that you receive not just data, but actionable intelligence that propels your business toward success. Thank you for considering us as your trusted research partner. Together, let’s explore the endless possibilities and chart a course for your business’s prosperous future.
-          </p>
-        </div>
-      </div>
+ 
+{/* Our Promise Section */}
+<div className="container mx-auto px-4 py-12 flex flex-wrap items-center">
+<div className="w-full md:w-1/2 md:pl-8">
+    <h2 className="text-3xl font-bold mb-4">Our Promise</h2>
+    <p className="text-lg leading-relaxed">
+      When you partner with us, you embark on a journey of discovery and growth. We are dedicated to providing you with insights that inspire confidence and drive meaningful outcomes. Our commitment to excellence, coupled with our passion for unraveling market intricacies, ensures that you receive not just data, but actionable intelligence that propels your business toward success. Thank you for considering us as your trusted research partner. Together, let’s explore the endless possibilities and chart a course for your business’s prosperous future.
+    </p>
+  </div>
+  <div className="w-full md:w-1/2 mb-8 md:mb-0">
+    {/* Display the company image */}
+    <img src={promiseimage} alt="About Us" className="rounded-lg w-full h-auto" />
+  </div>
+ 
+</div>
+
+
 
     </div>
   );

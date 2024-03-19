@@ -12,7 +12,11 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               <div className="mb-4 lg:mb-0">
-                <img src="https://via.placeholder.com/150" alt="Logo" className="h-12 w-auto mx-auto lg:mx-0" />
+              <img
+                className="h-8 w-auto"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                alt=""
+              />
               </div>
               <div className="sm:col-span-1">
                 <h2 className="text-lg font-semibold mb-4">Pages</h2>

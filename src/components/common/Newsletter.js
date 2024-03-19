@@ -22,8 +22,7 @@ export default function Example() {
           <div className="max-w-xl lg:max-w-lg">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
-              dolore.
+              Receive our latest insights, research findings, and updates straight to your inbox. Stay ahead of the curve with our weekly newsletter.
             </p>
             <div className="mt-6 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -53,7 +52,7 @@ export default function Example() {
               </div>
               <dt className="mt-4 font-semibold text-white">Weekly articles</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.
+                Stay informed with our weekly articles covering the latest trends, insights, and analysis in the market research industry.
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -62,7 +61,7 @@ export default function Example() {
               </div>
               <dt className="mt-4 font-semibold text-white">No spam</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.
+                Your inbox is safe with us. We promise not to inundate you with irrelevant emails or spam. Your privacy is our priority.
               </dd>
             </div>
           </dl>
