@@ -10,9 +10,9 @@ export default function Example() {
       <div className="relative isolate px-6 lg:px-8 mx-auto max-w-2xl">
         <div className="mx-auto max-w-2xl py-3 sm:py-48 lg:py-10">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white-900/10 hover:ring-white-900/20">
               Check out our latest market research reports.{' '}
-              <Link to="/marketplace" className="font-semibold text-indigo-600">
+              <Link to="/marketplace" className="font-semibold text-blue-300">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </Link>
@@ -29,14 +29,14 @@ export default function Example() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
            
               {/* Add search box content here */}
-              <div className="flex items-center border border-gray-700 rounded-md shadow-sm p-2 sm:p-3">
+              <div className="flex flex-col sm:flex-row items-center border border-gray-700 rounded-md shadow-sm p-2 sm:p-3">
   <input
     type="text"
     placeholder="Search reports"
-    className="flex-grow px-3 py-2 sm:py-3 sm:px-4 rounded-md focus:outline-none focus:ring-white focus:border-white text-gray-900"
+    className="flex-grow px-3 py-2 sm:py-3 sm:px-4 mb-2 sm:mb-0 mr-0 sm:mr-2 rounded-md focus:outline-none focus:ring-white focus:border-white text-gray-900"
   />
   <select
-    className="px-3 py-2 sm:py-3 sm:px-4 ml-2 sm:ml-3 rounded-md focus:outline-none focus:ring-white focus:border-white text-gray-900"
+    className="px-3 py-2 sm:py-3 sm:px-4 mb-2 sm:mb-0 mr-0 sm:mr-2 rounded-md focus:outline-none focus:ring-white focus:border-white text-gray-900"
   >
     <option value="" selected disabled>
       Select Category
@@ -47,7 +47,7 @@ export default function Example() {
     {/* Add more categories here */}
   </select>
   <button
-    className="ml-2 sm:ml-3 rounded-md bg-indigo-600 px-4 py-2 sm:py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+    className="rounded-md bg-indigo-600 px-4 py-2 sm:py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
   >
     Search
   </button>
