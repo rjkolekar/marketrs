@@ -35,12 +35,27 @@ const CompanyPage = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
-      <div className="bg-gray-200 py-12">
+           {/* Why Choose Us Section */}
+           <div className="bg-gray-200 py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">Why Choose Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Contents of Why Choose Us section */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-bold mb-2">Expertise</h3>
+              <p className="text-lg">Our team consists of industry experts with extensive experience in market research.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-bold mb-2">Custom Solutions</h3>
+              <p className="text-lg">We tailor our research methodologies to meet the unique needs of each client.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-bold mb-2">Data-Driven Insights</h3>
+              <p className="text-lg">We leverage advanced analytics to provide actionable insights and recommendations.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-bold mb-2">Client Satisfaction</h3>
+              <p className="text-lg">We prioritize client satisfaction and strive to exceed expectations in every project.</p>
+            </div>
           </div>
         </div>
       </div>
