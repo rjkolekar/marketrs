@@ -23,6 +23,66 @@ const [reports, setReports] = useState([
       methodology: 'Methodology: Technology Trends Report',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor vel odio interdum fermentum. Sed vel libero eget nulla placerat ultrices. Nam aliquet sem at quam tempus consequat.'
   },
+  {
+    id: 3,
+    title: 'Market Analysis 2023',
+    industry: 'Defense',
+    tableOfContents: 'Table of Contents: Market Analysis 2023',
+    description: 'Description: Market Analysis 2023',
+    highlights: 'Highlights: Market Analysis 2023',
+    methodology: 'Methodology: Market Analysis 2023',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor vel odio interdum fermentum. Sed vel libero eget nulla placerat ultrices. Nam aliquet sem at quam tempus consequat.'
+},
+{
+    id: 4,
+    title: 'Technology Trends Report',
+    industry: 'Aerospace & Defense',
+    tableOfContents: 'Table of Contents: Technology Trends Report',
+    description: 'Description: Technology Trends Report',
+    highlights: 'Highlights: Technology Trends Report',
+    methodology: 'Methodology: Technology Trends Report',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor vel odio interdum fermentum. Sed vel libero eget nulla placerat ultrices. Nam aliquet sem at quam tempus consequat.'
+},
+{
+  id: 5,
+  title: 'Market Analysis 2023',
+  industry: 'Defense',
+  tableOfContents: 'Table of Contents: Market Analysis 2023',
+  description: 'Description: Market Analysis 2023',
+  highlights: 'Highlights: Market Analysis 2023',
+  methodology: 'Methodology: Market Analysis 2023',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor vel odio interdum fermentum. Sed vel libero eget nulla placerat ultrices. Nam aliquet sem at quam tempus consequat.'
+},
+{
+  id: 6,
+  title: 'Technology Trends Report',
+  industry: 'Aerospace & Defense',
+  tableOfContents: 'Table of Contents: Technology Trends Report',
+  description: 'Description: Technology Trends Report',
+  highlights: 'Highlights: Technology Trends Report',
+  methodology: 'Methodology: Technology Trends Report',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor vel odio interdum fermentum. Sed vel libero eget nulla placerat ultrices. Nam aliquet sem at quam tempus consequat.'
+},
+{
+  id: 7,
+  title: 'Market Analysis 2023',
+  industry: 'Defense',
+  tableOfContents: 'Table of Contents: Market Analysis 2023',
+  description: 'Description: Market Analysis 2023',
+  highlights: 'Highlights: Market Analysis 2023',
+  methodology: 'Methodology: Market Analysis 2023',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor vel odio interdum fermentum. Sed vel libero eget nulla placerat ultrices. Nam aliquet sem at quam tempus consequat.'
+},
+{
+  id: 8,
+  title: 'Technology Trends Report',
+  industry: 'Aerospace & Defense',
+  tableOfContents: 'Table of Contents: Technology Trends Report',
+  description: 'Description: Technology Trends Report',
+  highlights: 'Highlights: Technology Trends Report',
+  methodology: 'Methodology: Technology Trends Report',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor vel odio interdum fermentum. Sed vel libero eget nulla placerat ultrices. Nam aliquet sem at quam tempus consequat.'
+},
   // Add other reports here...
 ]);
 
