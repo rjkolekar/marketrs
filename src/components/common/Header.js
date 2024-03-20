@@ -107,7 +107,7 @@ export default function Example() {
             className="text-sm font-semibold leading-6 text-gray-900"
             onClick={() => setMobileMenuOpen(false)} // Close mobile menu on click
           >
-            Features
+            Reports
           </Link>
           <Link
             to="/marketplace"
@@ -186,7 +186,7 @@ export default function Example() {
      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
      onClick={() => setMobileMenuOpen(false)} // Close mobile menu on click
    >
-     Features
+     Reports
    </Link>
    <Link
      to="/marketplace"
