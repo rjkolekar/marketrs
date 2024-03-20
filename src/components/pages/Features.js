@@ -150,29 +150,68 @@ const ReportPage = () => {
                     </div>
                 </div>
 
-                {/* Sidebar for report details */}
-                {selectedReport && (
-                    <div className="lg:col-span-1">
-                        <div className="sticky top-0 max-h-screen overflow-y-auto">
-                            <div className="bg-gray-100 rounded-md shadow-md p-4 mb-4">
-                                <h3 className="text-lg font-semibold mb-2">{selectedReport.title}</h3>
-                                <div className="flex justify-between items-center">
-                                    <span className="font-semibold text-gray-900">{selectedReport.price}</span>
-                                    <button
-                                        onClick={() => setShowContactForm(true)}
-                                        className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 text-sm"
-                                    >
-                                        Request Report
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="bg-gray-100 rounded-md shadow-md p-4">
-                                <h3 className="text-lg font-semibold mb-2">Related Reports</h3>
-                                {/* Display related reports here */}
-                            </div>
+{/* Sidebar for report details */}
+{selectedReport && (
+    <div className="lg:col-span-1">
+        <div className="sticky top-0 max-h-screen overflow-y-auto">
+            <div className="bg-gray-100 rounded-md shadow-md p-4 mb-4">
+                <h3 className="text-lg font-semibold mb-2">{selectedReport.title}</h3>
+                <div className="border-b pb-2" />
+                <div className="grid grid-cols-1 gap-4">
+                    <div className="border-b pb-2 pt-2">
+                        <span className="font-semibold text-gray-900">Single User License:</span>
+                        <span className="ml-2">$99</span>
+                    </div>
+                    <div className="border-b pb-2">
+                        <span className="font-semibold text-gray-900">Excel Datasheet:</span>
+                        <span className="ml-2">$99</span>
+                    </div>
+                    <div className="flex justify-end">
+                        <div>
+                            <button
+                                onClick={() => setShowContactForm(true)}
+                                className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 text-sm mr-2"
+                            >
+                                Buy Now
+                            </button>
+                        </div>
+                        <div>
+                            <button
+                                onClick={() => setShowContactForm(true)}
+                                className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 text-sm"
+                            >
+                                Request Discount
+                            </button>
                         </div>
                     </div>
-                )}
+                </div>
+            </div>
+            <div className="bg-gray-100 rounded-md shadow-md p-4">
+                <h3 className="text-lg font-semibold mb-2">Related Reports</h3>
+                <div className="grid grid-cols-1 gap-4">
+                    {/* Sample related reports */}
+                    <div className="flex flex-col">
+                        <h4 className="text-md font-semibold mb-2">Related Report 1</h4>
+                        <p className="text-sm text-gray-700 mb-4">Brief description of related report 1.</p>
+                        <button className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 text-sm">
+                            View Report
+                        </button>
+                    </div>
+                    <div className="flex flex-col">
+                        <h4 className="text-md font-semibold mb-2">Related Report 2</h4>
+                        <p className="text-sm text-gray-700 mb-4">Brief description of related report 2.</p>
+                        <button className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 text-sm">
+                            View Report
+                        </button>
+                    </div>
+                    {/* Add more related reports here */}
+                </div>
+            </div>
+        </div>
+    </div>
+)}
+
+
             </div>
         </div>
     );
