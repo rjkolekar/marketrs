@@ -10,7 +10,7 @@ import Footer from './components/common/Footer';
 import Contact from './components/Contact'
 import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
-
+import Reports from './components/pages/Reports'
 function App() {
   return (
     <Router>
@@ -24,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/reports" element={<Reports />} />
 
       </Routes>
       <Newsletter />
