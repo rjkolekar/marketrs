@@ -103,7 +103,7 @@ export default function Example() {
           </Popover>
 
           <Link
-            to="/features"
+            to="/reports"
             className="text-sm font-semibold leading-6 text-gray-900"
             onClick={() => setMobileMenuOpen(false)} // Close mobile menu on click
           >
@@ -122,6 +122,13 @@ export default function Example() {
             onClick={() => setMobileMenuOpen(false)} // Close mobile menu on click
           >
             Company
+          </Link>
+          <Link
+            to="/contact"
+            className="text-sm font-semibold leading-6 text-gray-900"
+            onClick={() => setMobileMenuOpen(false)} // Close mobile menu on click
+          >
+            Contact
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">

@@ -31,19 +31,7 @@ const reports = [
     description:
       'Predict future market trends and anticipate shifts to stay ahead of the competition.',
     price: '$99.99',
-  },
-  {
-    name: 'Consumer Satisfaction Study',
-    description:
-      'Understand customer satisfaction levels and areas for improvement to enhance brand loyalty.',
-    price: '$129.99',
-  },
-  {
-    name: 'Industry Innovation Analysis',
-    description:
-      'Analyze industry innovations and emerging technologies to adapt and innovate your offerings.',
-    price: '$79.99',
-  },
+  }
 ];
 
 export default function MarketResearchReports() {
@@ -230,7 +218,7 @@ export default function MarketResearchReports() {
                   type="submit"
                   className="block w-1/2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Let's talk
+                  Request Sample
                 </button>
 
               </div>
@@ -240,5 +228,5 @@ export default function MarketResearchReports() {
         </div>
       )}
     </div>
-  );
+  )
 }

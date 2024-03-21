@@ -1,6 +1,6 @@
 import Header from './components/common/Header';
 import Products from './components/pages/Products';
-import Features from './components/pages/Features';
+import Features from './components/pages/Reports';
 import Company from './components/pages/Company';
 import Home from './components/pages/Home';
 import Newsletter from './components/common/Newsletter';
@@ -18,13 +18,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/features" element={<Features />} />
+        <Route path="/reports" element={<Reports />} />
         <Route path="/company" element={<Company />} />
         <Route path="/marketplace" element={<MarketPlace />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/reports" element={<Reports />} />
+        
+
+       
 
       </Routes>
       <Newsletter />
